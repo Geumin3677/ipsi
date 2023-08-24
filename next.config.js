@@ -14,7 +14,8 @@ module.exports = withPlugins(
 			withPWA,
 			{
 				pwa: {
-					dest: "public"
+					dest: "public",
+					subdomainPrefix: "/"
 				},
 			},
 		],
