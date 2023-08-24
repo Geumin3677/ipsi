@@ -5,7 +5,7 @@ const withPWA = require("next-pwa");
 const nextConfig = {
 	reactStrictMode: true,
   output: 'export',
-  basePath: "/ipsi"
+  basePath: "/"
 };
 
 module.exports = withPlugins(
@@ -14,8 +14,7 @@ module.exports = withPlugins(
 			withPWA,
 			{
 				pwa: {
-					dest: "public",
-          subdomainPrefix: "/ipsi"
+					dest: "public"
 				},
 			},
 		],
