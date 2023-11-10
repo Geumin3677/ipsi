@@ -50,7 +50,7 @@ export default function Home() {
 
 
   async function cardFactory() {
-    const res = await axios.get(`http://34.81.117.111:4001/api/getData`)
+    const res = await axios.get(`http://334.80.142.151:4001/api/getData`)
     setD(res.data)
   }
 
@@ -60,7 +60,7 @@ export default function Home() {
 
   async function resetState() {
     if(window.confirm('정말로 초기화 하겠습니까?')) {
-      const res = await axios.get(`http://34.81.117.111:4001/api/reset`)
+      const res = await axios.get(`http://34.80.142.151:4001/api/reset`)
       if(res.status === 200) {
         window.alert('리셋 성공')
       }
@@ -69,7 +69,7 @@ export default function Home() {
 
   async function deleteUser(e) {
     console.log(e.target.id)
-    await axios.get(`http://34.81.117.111:4001/api/deleteUser/${e.target.id}`)
+    await axios.get(`http://34.80.142.151:4001/api/deleteUser/${e.target.id}`)
   }
 
   function asdf() {
