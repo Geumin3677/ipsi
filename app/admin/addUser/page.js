@@ -17,7 +17,7 @@ export default function Home() {
 
 
   async function addUser() {
-    const res = await axios.post('http://34.81.117.111:4001/api/addUser', {
+    const res = await axios.post('http://34.80.142.151:4001/api/addUser', {
       name: document.getElementById('name').value,
       gcinfo: document.getElementById('gcinfo').value,
       ssid: document.getElementById('ssid').value
