@@ -47,7 +47,7 @@ export default function Home() {
   }
 
   async function cardFactory() {
-    const res = await axios.get(`http://34.81.117.111:4001/api/getData`)
+    const res = await axios.get(`http://34.80.142.151:4001/api/getData`)
     setD(res.data)
   }
 
