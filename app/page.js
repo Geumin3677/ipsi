@@ -62,7 +62,7 @@ export default function Home() {
 
   return (
     <div className="background">
-      <h2 className="title">이매고 아침자습 출석자 현황</h2>
+      <h2 className="title">이매고 아침 자습 출석자 현황</h2>
       <div className="adcxt">
         <button style={{margin:10}}  onClick={cardFactory} >새로고침</button>
         <button style={{margin:10}} onClick={redirect.bind(this)} >학생 관리</button>
